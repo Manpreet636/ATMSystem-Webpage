@@ -1,0 +1,199 @@
+<html>
+<head>
+	<h1 class="h1"> Welcome to Cegep Login</h1>
+	<style>
+		* {box-sizing: border-box}
+		
+		/* Set height of body and the document to 100% */
+		body, html {
+		  height: 100%;
+		  margin: 0;
+		  font-family: Arial;
+		}
+
+
+		.h1{
+			text-align: center;
+			text-shadow: 2px 2px 5px red ;
+			color: olive;
+			font-style: italic;
+		}
+
+
+		/* Style tab links */
+		.tablink {
+		  background-color: rgb(51, 8, 45);
+		  color: white;
+		  float: left;
+		  border: none;
+		  outline: none;
+		  cursor: pointer;
+		  padding: 14px;
+		  font-size: 17px;
+		  width: 25%;
+		}
+		
+		.tablink:hover {
+		  background-color: #777;
+		}
+		.tabcontent {
+		  color: white;
+		  display: none;
+		  padding: 10px 20px;
+		  height: 40%;
+		}
+		/* Style the tab content (and add height:100% for full page content) */
+		
+		
+		#Home {background-color: red;}
+		#News {background-color: green;}
+		#Contact {background-color: blue;}
+		#About {background-color: orange;}
+		</style>
+</head>
+
+<style type="text/css">
+body{
+	background-image:url("https://www.imagescanada.ca/wp-content/uploads/2019/03/Spectacular-Photos-of-Niagara-Falls-Casinos.jpg");
+	background-size: cover;
+	background-color: rgb(19, 66, 80);
+}
+
+.aa{
+	margin:0 auto	;
+	width:350px;
+	height: 350px;
+	background-color: rgba(36, 163, 93, 0.4);
+	margin-top: 125px;
+	padding-left: 50px;
+	padding-top: 10px;
+	border-radius: 20px;
+	color:rgb(24, 10, 18);
+	font-weight: bolder;
+	font-size: 18px;
+	box-shadow: inset -5px -5px rgba(219, 135, 8, 0.5);
+}	
+
+
+.aa input[type="text"]{
+	width: 200px;
+	height: 35px;
+	border-radius: 5px;
+	padding-left: 5px;
+	border:0;
+}
+.aa input[type="password"]{
+	width: 200px;
+	height: 30px;
+	border-radius: 5px;
+	padding-left: 5px;
+	border:0;
+}
+.aa input[type="submit"]{
+	width: 100px;
+	height: 35px;
+	border-radius: 5px;
+	background-color: skyblue;
+	border:0;
+	background-color: aqua;
+	
+	font-weight: bolder;
+}
+.aa input[type="submit"]:hover{
+	cursor:pointer;
+}
+.aa input[type="button"]{
+	width: 150px;
+	height: 35px;
+	border-radius: 5px;
+	background-color: rgb(13, 51, 66);
+	border:0;
+	background-color: rgb(233, 222, 124);	
+}
+.aa input[type= "submit"]{
+	cursor: pointer;
+}
+
+	</style>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'red')" >Home</button>
+<button class="tablink" onclick="openPage('News', this, 'green')" >News</button>
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+<div id="Home" class="tabcontent" >
+  <h3>Home</h3>
+  <p>Home is where the heart is..<br>
+	  We welcome you for the one of the web applications of cegep that shows the UI of Bank Login page.
+  </p>
+</div>
+
+<div id="News" class="tabcontent">
+  <h3>News</h3>
+  <p>Some news this fine day!<br>
+	The first mRNA vaccines approved for use in humans — the Pfizer/BioNTech and Moderna COVID-19 vaccines — are being rolled out around the world.
+	<br>
+	These vaccines deliver mRNA, coated in lipid (fat), into cells. Once inside, your body uses instructions in the mRNA to make SARS-CoV-2 spike proteins. 
+	<br>
+	The immune response protects around 95% of people vaccinated with either vaccine from developing COVID-19.
+  </p> 
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>For more queries about this application you can contact <br>
+	  Hrushikesh -- 438-506-5122<br>
+	  E-mail -- hrushikeshreddy24@gmail.com
+	 </p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.<br>
+	We are Team 3 of MAD325 who are working to develope a web page using the html <br>
+	This is our first attempt on such a project and we are glad to get an opportunity to present our skills<br>
+	The following are the team members<br>
+	Hrushikesh Reddy<br>
+	Shamli Sampla<br>
+	Manpreet Kaur<br>
+	Anmoldeep Singh
+</p>
+</div>
+
+
+
+<div class="a">	
+</div>
+
+
+<div class="aa">
+<h2>Login</h2>
+<form action="Advance.html" target="_newTab" method="POST">
+<input type="text" required="Enter Card Number" placeholder="Please Enter UserName...." name="username"><br><br>
+<input type="password" required="Enter Password"  placeholder="Please Enter Password..." name="userpassword" pattern=".{8,}" required title="Please enter minimum 8 characters"/><br><br>
+<input type="submit" value="login"/><br><br>
+
+<script src="//cdn1.makermoon.space/embed.js?id=58da7a1c1416e82f5e8b4568"></script>
+</form>
+<script>
+	function openPage(pageName,elmnt,color) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablink");
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].style.backgroundColor = "";
+	  }
+	  document.getElementById(pageName).style.display = "block";
+	  elmnt.style.backgroundColor = color;
+	}
+	
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
+	</script>
+</div>
+</body>
+</html>
